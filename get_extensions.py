@@ -23,17 +23,3 @@ sex = get_extensionsv2(pic_dir)
 n = 0
 for x in sex:
     print(f"{x}\n")
-i = 0
-
-for i in range(len(sex)):
-    print(sex[(i)])
-
-
-
-sexy = str(sex)
-remove = "[(',)]"
-splitsexy = sexy.strip(remove)
-
-print(splitsexy)
-print(sex)
-print("\n", sexy)
