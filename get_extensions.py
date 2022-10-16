@@ -10,4 +10,6 @@ def get_extensions(folder):
     for file in files:
         all_extensions.append(file.split(".")[-1])
     return list(set(all_extensions))
-print(rename_files(pic_dir))
+
+
+print(get_extensions(pic_dir))
