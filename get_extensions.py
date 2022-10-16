@@ -20,13 +20,13 @@ def get_extensionsv2(folder):
     return list(set(all_extensions))
 
 
-sex = get_extensionsv2(pic_dir)
+pretty = get_extensionsv2(pic_dir)
 n = 0
-x = len(sex)
+x = len(pretty)
 print(x)
 
 
-def fucking_vars(list):
+def fraking_vars(list):
     for i in range(x):
         eff = list[i]
         effstr = str(f"{eff}")
@@ -43,5 +43,5 @@ def assign_var(list):
         return zed
 
 
-fucking_vars(sex)
-print(assign_var(sex))
+fraking_vars(pretty)
+print(assign_var(pretty))
