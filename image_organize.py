@@ -1,5 +1,6 @@
 import glob
 import os
+import string
 
 
 # test folder location for my reference: /Users/jasbook/Pictures/22_09_13-copy
@@ -18,6 +19,13 @@ def select_files(folder, extension):
     os.chdir(folder)
     files = glob.glob("*." + extension)
     return files
+
+
+def get_extensions(folder):
+    files = os.listdir(folder)
+    for file in files:
+        print(file.split(".")[-1])
+
 
 
 def rename_files(folder):
@@ -53,6 +61,7 @@ def quit_or_rerun():
 def main():
     folder = prompt_user()
     rename_files(folder)
+    get_extensions(folder)
     extensions = ["jpg", "png", "gif", "svg", "cr2", "tif", "tiff", ".dng"]
     for extension in extensions:
         create_folder(folder, extension)
