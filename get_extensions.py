@@ -43,5 +43,10 @@ def assign_var(list):
         return zed
 
 
-fraking_vars(pretty)
-print(assign_var(pretty))
+new_list = []
+for i in pretty:
+    new_list.append(i[1])
+
+print(new_list)
+# fraking_vars(pretty)
+# print(assign_var(pretty))
