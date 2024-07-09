@@ -11,6 +11,7 @@ pic_dir = "/Users/jasbook/Pictures/22_09_13-copy"
 #         all_extensions.append(file.split(".")[-1])
 #     return list(set(all_extensions))
 
+
 def get_extensionsv2(folder):
     os.chdir(folder)
     files = os.listdir(folder)
@@ -39,7 +40,7 @@ def assign_var(list):
     print(list)
     for thing in list:
         ivar += 1
-        zed = (f"var{ivar} = {thing}")
+        zed = f"var{ivar} = {thing}"
         return zed
 
 
